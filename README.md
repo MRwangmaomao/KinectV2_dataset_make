@@ -1,0 +1,2 @@
+# KinectV2_dataset_make
+使用kinectv2制作自己的数据集
