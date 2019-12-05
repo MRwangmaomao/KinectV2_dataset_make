@@ -46,8 +46,8 @@ void ImageSave(const sensor_msgs::ImageConstPtr& msgRGB,const sensor_msgs::Image
     counters++;
  
 
-   ofstream frgb(save_path + "/rgb.txt");
-   ofstream fdepth(save_path + "/depth.txt");
+   ofstream frgb(save_path + "/rgb.txt",ios::app);
+   ofstream fdepth(save_path + "/depth.txt",ios::app);
 
    //显示图像
     cv::namedWindow(imagergb, cv::WINDOW_AUTOSIZE); 
