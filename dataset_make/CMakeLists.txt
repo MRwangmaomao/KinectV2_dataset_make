@@ -208,3 +208,10 @@ target_link_libraries(get_image_node
   ${catkin_LIBRARIES}
   ${OpenCV_LIBS}
 )
+
+add_executable(realsense_get_image_node src/realsense_get_image.cpp)
+add_dependencies(realsense_get_image_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(realsense_get_image_node
+  ${catkin_LIBRARIES}
+  ${OpenCV_LIBS}
+)
